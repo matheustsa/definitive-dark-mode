@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Definitive Dark Mode",
+  "version": "1.0",
+  "description": "Controle personalizado de modo escuro por URL ou global.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
