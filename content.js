@@ -102,9 +102,7 @@ function applyTheme() {
           p, span, h1, h2, h3, h4, h5, h6, li, a, td, th, blockquote, label {
             color: ${config.textColor} !important;
           }
-          img, video, canvas, svg {
-            filter: brightness(0.9) contrast(1.1);
-          }
+
         `;
       }
     }
