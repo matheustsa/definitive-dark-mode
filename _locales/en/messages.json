@@ -1,0 +1,74 @@
+{
+  "appName": {
+    "message": "Definitive Dark Mode",
+    "description": "Extension name"
+  },
+  "appDesc": {
+    "message": "Custom dark mode control by URL or globally.",
+    "description": "Extension description"
+  },
+  "title": {
+    "message": "Dark Mode",
+    "description": "Main title in popup"
+  },
+  "enableExtension": {
+    "message": "Enable Extension",
+    "description": "Label for enable extension checkbox"
+  },
+  "applyAll": {
+    "message": "Enable for all sites",
+    "description": "Label for apply to all sites checkbox"
+  },
+  "method": {
+    "message": "Method",
+    "description": "Label for method selector"
+  },
+  "customColors": {
+    "message": "Custom Colors",
+    "description": "Option for custom colors method"
+  },
+  "invertColors": {
+    "message": "Smart Invert",
+    "description": "Option for smart invert method"
+  },
+  "bgColor": {
+    "message": "Background Color",
+    "description": "Label for background color"
+  },
+  "textColor": {
+    "message": "Text Color",
+    "description": "Label for text color"
+  },
+  "urlPatternLabel": {
+    "message": "URL Pattern (e.g. www.site.com/* or *.site.com/*)",
+    "description": "Label for URL pattern input"
+  },
+  "urlInputPlaceholder": {
+    "message": "www.site.com/*",
+    "description": "Placeholder for URL pattern input"
+  },
+  "addActive": {
+    "message": "Enable Pattern",
+    "description": "Button to enable URL pattern"
+  },
+  "addIgnored": {
+    "message": "Ignore Pattern",
+    "description": "Button to ignore URL pattern"
+  },
+  "tabActive": {
+    "message": "Active",
+    "description": "Tab for active sites"
+  },
+  "tabIgnored": {
+    "message": "Ignored",
+    "description": "Tab for ignored sites"
+  },
+  "emptyList": {
+    "message": "No sites in list",
+    "description": "Message when list is empty"
+  },
+  "deleteBtnTitle": {
+    "message": "Delete",
+    "description": "Tooltip for delete button"
+  }
+}

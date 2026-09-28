@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
   <meta charset="UTF-8">
-  <title>Dark Mode Settings</title>
+  <title>Definitive Dark Mode</title>
   <style>
     body {
       width: 310px;
@@ -159,23 +159,23 @@
 </head>
 
 <body>
-  <h2>Modo Escuro Definitivo</h2>
+  <h2 data-i18n="title">Modo Escuro</h2>
 
   <div class="row">
-    <label for="enableExtension">Ativar Extensão</label>
+    <label for="enableExtension" data-i18n="enableExtension">Ativar Extensão</label>
     <input type="checkbox" id="enableExtension">
   </div>
 
   <div class="row">
-    <label for="applyAll">Ativar para todos os sites</label>
+    <label for="applyAll" data-i18n="applyAll">Ativar para todos os sites</label>
     <input type="checkbox" id="applyAll">
   </div>
 
   <div class="row">
-    <label for="mode">Método</label>
+    <label for="mode" data-i18n="method">Método</label>
     <select id="mode">
-      <option value="custom">Cores Personalizadas</option>
-      <option value="invert">Inversão Inteligente</option>
+      <option value="custom" data-i18n="customColors">Cores Personalizadas</option>
+      <option value="invert" data-i18n="invertColors">Inversão Inteligente</option>
     </select>
   </div>
 
@@ -183,12 +183,12 @@
 
   <div id="customColorsGroup">
     <div class="row">
-      <label for="bgColor">Cor do Fundo</label>
+      <label for="bgColor" data-i18n="bgColor">Cor do Fundo</label>
       <input type="color" id="bgColor" value="#121212">
     </div>
 
     <div class="row">
-      <label for="textColor">Cor do Texto</label>
+      <label for="textColor" data-i18n="textColor">Cor do Texto</label>
       <input type="color" id="textColor" value="#e0e0e0">
     </div>
   </div>
@@ -196,21 +196,21 @@
   <hr>
 
   <div class="url-section">
-    <label for="urlInput"
+    <label for="urlInput" data-i18n="urlPatternLabel"
       style="font-weight: 500; font-size: 11px; color: #aaa; display: block; margin-bottom: 4px;">Padrão de URL (ex:
       www.site.com/* ou *.site.com/*)</label>
-    <input type="text" id="urlInput" placeholder="www.site.com/*"
+    <input type="text" id="urlInput" data-i18n-placeholder="urlInputPlaceholder" placeholder="www.site.com/*"
       style="width: 100%; box-sizing: border-box; background: #2a2a2a; color: #e0e0e0; border: 1px solid #444; padding: 6px 8px; border-radius: 4px; font-size: 12px; margin-bottom: 6px;" />
   </div>
 
   <div class="btn-group">
-    <button id="addCurrentActive">Ativar Padrão</button>
-    <button id="addCurrentIgnored" class="btn-ignore">Ignorar Padrão</button>
+    <button id="addCurrentActive" data-i18n="addActive">Ativar Padrão</button>
+    <button id="addCurrentIgnored" class="btn-ignore" data-i18n="addIgnored">Ignorar Padrão</button>
   </div>
 
   <div class="tabs" style="margin-top: 10px;">
-    <button class="tab-btn active" id="tabActive">Ativos</button>
-    <button class="tab-btn" id="tabIgnored">Ignorados</button>
+    <button class="tab-btn active" id="tabActive" data-i18n="tabActive">Ativos</button>
+    <button class="tab-btn" id="tabIgnored" data-i18n="tabIgnored">Ignorados</button>
   </div>
 
   <ul id="activeList"></ul>

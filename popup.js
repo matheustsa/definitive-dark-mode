@@ -10,6 +10,10 @@ const defaultSettings = {
 
 let currentTab = null;
 
+document.addEventListener("DOMContentLoaded", () => {
+  localizeUI();
+});
+
 chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
   currentTab = tabs[0];
   const urlInput = document.getElementById("urlInput");
@@ -21,6 +25,24 @@ chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
   }
   loadSettings();
 });
+
+function localizeUI() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    const msg = chrome.i18n.getMessage(key);
+    if (msg) el.textContent = msg;
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    const msg = chrome.i18n.getMessage(key);
+    if (msg) el.placeholder = msg;
+  });
+  document.querySelectorAll("[data-i18n-title]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-title");
+    const msg = chrome.i18n.getMessage(key);
+    if (msg) el.title = msg;
+  });
+}
 
 function getDefaultPattern(urlStr) {
   if (!urlStr) return "";
@@ -151,7 +173,8 @@ function renderList(elementId, items, storageKey) {
   list.innerHTML = "";
 
   if (items.length === 0) {
-    list.innerHTML = '<li class="empty-msg">Nenhum site na lista</li>';
+    const emptyMsg = chrome.i18n.getMessage("emptyList") || "Nenhum site na lista";
+    list.innerHTML = `<li class="empty-msg">${emptyMsg}</li>`;
     return;
   }
 
@@ -166,7 +189,7 @@ function renderList(elementId, items, storageKey) {
     const delBtn = document.createElement("button");
     delBtn.textContent = "✕";
     delBtn.className = "del-btn";
-    delBtn.title = "Excluir";
+    delBtn.title = chrome.i18n.getMessage("deleteBtnTitle") || "Excluir";
     delBtn.addEventListener("click", () => {
       items.splice(index, 1);
       chrome.storage.sync.set({ [storageKey]: items }, () => {

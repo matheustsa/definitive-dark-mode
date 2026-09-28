@@ -1,0 +1,74 @@
+{
+  "appName": {
+    "message": "Definitive Dark Mode",
+    "description": "Nome da extensão"
+  },
+  "appDesc": {
+    "message": "Controle personalizado de modo escuro por URL ou global.",
+    "description": "Descrição da extensão"
+  },
+  "title": {
+    "message": "Modo Escuro",
+    "description": "Título principal no popup"
+  },
+  "enableExtension": {
+    "message": "Ativar Extensão",
+    "description": "Label do checkbox para ativar a extensão"
+  },
+  "applyAll": {
+    "message": "Ativar para todos os sites",
+    "description": "Label do checkbox para aplicar a todos os sites"
+  },
+  "method": {
+    "message": "Método",
+    "description": "Label do seletor de método"
+  },
+  "customColors": {
+    "message": "Cores Personalizadas",
+    "description": "Opção do método de cores personalizadas"
+  },
+  "invertColors": {
+    "message": "Inversão Inteligente",
+    "description": "Opção do método de inversão inteligente"
+  },
+  "bgColor": {
+    "message": "Cor do Fundo",
+    "description": "Label da cor de fundo"
+  },
+  "textColor": {
+    "message": "Cor do Texto",
+    "description": "Label da cor do texto"
+  },
+  "urlPatternLabel": {
+    "message": "Padrão de URL (ex: www.site.com/* ou *.site.com/*)",
+    "description": "Label do campo de padrão de URL"
+  },
+  "urlInputPlaceholder": {
+    "message": "www.site.com/*",
+    "description": "Placeholder do campo de URL"
+  },
+  "addActive": {
+    "message": "Ativar Padrão",
+    "description": "Botão para ativar padrão de URL"
+  },
+  "addIgnored": {
+    "message": "Ignorar Padrão",
+    "description": "Botão para ignorar padrão de URL"
+  },
+  "tabActive": {
+    "message": "Ativos",
+    "description": "Aba de sites ativos"
+  },
+  "tabIgnored": {
+    "message": "Ignorados",
+    "description": "Aba de sites ignorados"
+  },
+  "emptyList": {
+    "message": "Nenhum site na lista",
+    "description": "Mensagem quando a lista está vazia"
+  },
+  "deleteBtnTitle": {
+    "message": "Excluir",
+    "description": "Título/tooltip do botão de excluir"
+  }
+}

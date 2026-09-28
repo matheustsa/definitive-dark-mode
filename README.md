@@ -47,6 +47,8 @@ Como esta extensão está em desenvolvimento local, você pode instalá-la no na
 4. **Modo Global:** Marque a opção **Ativar para todos os sites** se desejar aplicar em toda a web (respeitando a lista de ignorados).
 5. **Personalização de Cores:** Alterne entre os métodos *Cores Personalizadas* (com seletor de cor) ou *Inversão Inteligente*.
 
+- 🌐 **Suporte Multi-idioma (i18n):** Suporte nativo a Português (`pt-BR`) e Inglês (`en-US`).
+
 ---
 
 ## 📁 Estrutura de Arquivos
@@ -57,7 +59,8 @@ definitive-dark-mode/
 ├── content.js         # Content script responsável pela injeção do CSS e checagem de URLs
 ├── popup.html         # Interface visual do menu popup
 ├── popup.js           # Lógica do popup, gerenciamento do armazenamento (chrome.storage) e padrões
-└── icons/             # Ícones da extensão (16x16, 48x48, 128x128)
+├── icons/             # Ícones da extensão (16x16, 48x48, 128x128)
+└── _locales/          # Arquivos de tradução i18n (pt_BR e en)
 ```
 
 ---
