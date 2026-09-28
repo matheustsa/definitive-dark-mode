@@ -80,7 +80,7 @@ function applyTheme() {
       if (config.mode === "invert") {
         styleEl.textContent = `
           html {
-            filter: invert(90%) hue-rotate(180deg) !important;
+            filter: invert(100%) hue-rotate(180deg) !important;
             background-color: #121212 !important;
           }
           img, video, canvas, picture, svg {
