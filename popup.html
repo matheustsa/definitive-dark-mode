@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Dark Mode Settings</title>
@@ -13,21 +14,25 @@
       color: #e0e0e0;
       font-size: 13px;
     }
+
     h2 {
       font-size: 15px;
       margin: 0 0 12px 0;
       text-align: center;
       color: #fff;
     }
+
     .row {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 10px;
     }
+
     label {
       cursor: pointer;
     }
+
     select {
       background: #2a2a2a;
       color: #e0e0e0;
@@ -37,6 +42,7 @@
       font-size: 12px;
       cursor: pointer;
     }
+
     input[type="color"] {
       border: 1px solid #444;
       background: none;
@@ -46,11 +52,13 @@
       cursor: pointer;
       border-radius: 4px;
     }
+
     .btn-group {
       display: flex;
       gap: 6px;
       margin-top: 6px;
     }
+
     button {
       flex: 1;
       background: #2563eb;
@@ -62,25 +70,31 @@
       font-weight: 500;
       font-size: 11px;
     }
+
     button:hover {
       background: #1d4ed8;
     }
+
     button.btn-ignore {
       background: #b45309;
     }
+
     button.btn-ignore:hover {
       background: #92400e;
     }
+
     hr {
       border: none;
       border-top: 1px solid #333;
       margin: 12px 0;
     }
+
     .tabs {
       display: flex;
       margin-bottom: 8px;
       border-bottom: 1px solid #333;
     }
+
     .tab-btn {
       flex: 1;
       background: none;
@@ -91,11 +105,13 @@
       font-size: 12px;
       border-radius: 0;
     }
+
     .tab-btn.active {
       color: #fff;
       border-bottom: 2px solid #2563eb;
       background: none;
     }
+
     ul {
       list-style: none;
       padding: 0;
@@ -103,6 +119,7 @@
       max-height: 110px;
       overflow-y: auto;
     }
+
     li {
       display: flex;
       justify-content: space-between;
@@ -114,6 +131,7 @@
       font-size: 12px;
       word-break: break-all;
     }
+
     .del-btn {
       width: auto;
       flex: none;
@@ -122,22 +140,26 @@
       font-size: 11px;
       margin: 0 0 0 8px;
     }
+
     .del-btn:hover {
       background: #dc2626;
     }
+
     .empty-msg {
       color: #777;
       text-align: center;
       font-style: italic;
     }
+
     .disabled-group {
       opacity: 0.4;
       pointer-events: none;
     }
   </style>
 </head>
+
 <body>
-  <h2>Modo Escuro</h2>
+  <h2>Modo Escuro Definitivo</h2>
 
   <div class="row">
     <label for="enableExtension">Ativar Extensão</label>
@@ -174,8 +196,11 @@
   <hr>
 
   <div class="url-section">
-    <label for="urlInput" style="font-weight: 500; font-size: 11px; color: #aaa; display: block; margin-bottom: 4px;">Padrão de URL (ex: www.site.com/* ou *.site.com/*)</label>
-    <input type="text" id="urlInput" placeholder="www.site.com/*" style="width: 100%; box-sizing: border-box; background: #2a2a2a; color: #e0e0e0; border: 1px solid #444; padding: 6px 8px; border-radius: 4px; font-size: 12px; margin-bottom: 6px;" />
+    <label for="urlInput"
+      style="font-weight: 500; font-size: 11px; color: #aaa; display: block; margin-bottom: 4px;">Padrão de URL (ex:
+      www.site.com/* ou *.site.com/*)</label>
+    <input type="text" id="urlInput" placeholder="www.site.com/*"
+      style="width: 100%; box-sizing: border-box; background: #2a2a2a; color: #e0e0e0; border: 1px solid #444; padding: 6px 8px; border-radius: 4px; font-size: 12px; margin-bottom: 6px;" />
   </div>
 
   <div class="btn-group">
@@ -193,4 +218,5 @@
 
   <script src="popup.js"></script>
 </body>
+
 </html>

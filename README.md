@@ -56,7 +56,8 @@ definitive-dark-mode/
 ├── manifest.json      # Configurações e permissões da extensão (Manifest V3)
 ├── content.js         # Content script responsável pela injeção do CSS e checagem de URLs
 ├── popup.html         # Interface visual do menu popup
-└── popup.js           # Lógica do popup, gerenciamento do armazenamento (chrome.storage) e padrões
+├── popup.js           # Lógica do popup, gerenciamento do armazenamento (chrome.storage) e padrões
+└── icons/             # Ícones da extensão (16x16, 48x48, 128x128)
 ```
 
 ---
